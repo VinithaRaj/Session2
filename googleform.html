@@ -1,0 +1,73 @@
+<html>
+<head><title></title>
+<style>
+input:invalid {
+border: 2px solid red;
+
+}
+input: valid{
+border: 2px solid green;
+}
+
+form{
+padding:20px;margin:10px
+}
+
+</style>
+</head>
+<body>
+	<form >
+		Name<sup>*</sup><br>
+			<input type="text" name="fname" placeholder="First" minlength="2" >
+			<input type="text" name="lname" placeholder="Last" minlength="2"><br>
+		Choose your username<sup>*</sup><br>
+			<input type="url" name="username" placeholder="@gmail.com" ><br>
+		Create password<sup>*</sup><br>
+			<input type="password" name="password" ><br>
+		Confirm password<sup>*</sup><br>
+			<input type="text" name="fname" ><br>
+		Birthday<sup>*</sup><br>
+			<select name="months">
+			<option value="january">January</option>
+			<option value="february">February</option>
+			<option value="March">March</option>
+			<option value="April">April</option>
+			<option value="May">May</option>
+			<option value="June">June</option>
+			<option value="July">July</option>
+			<option value="August">August</option>
+			<option value="September">September</option>
+			<option value="October">October</option>
+			<option value="November">November</option>
+			<option value="December">December</option>
+			</select>
+
+			<input type="number" name="day" placeholder="Day" max="31" min="1">
+			<input type="text" name="year" placeholder="Year" maxlength="4"><br>
+		Gender<sup>*</sup><br>
+			<select name="gender">
+			<option value="female">Female</option>
+			<option value="male">Male</option>
+			<option value="other">Other</option></select>
+			<br><br>
+		Your current email address<br>
+			<input type="url" name="username2" ><br>
+		Location<br>
+			<select name="countries">
+			<option value="malaysia">Malaysia</option>
+			<option value="Afghanistan">Afghanistan</option>
+			<option value="India">India</option>
+			<option value="Singapore">Singapore</option><br>
+			</select><br>
+
+		Mobile Phone<br>
+			<input list="phone" type="text" maxlength="10">
+			<datalist id="phone">
+			<option value="+60" >Malaysia</option>
+			<option value="+338" >Afghanistan</option>
+			<option value="+91" >India</option>
+			<option value="+87" >Singapore</option><br>
+			</datalist>
+	</form>
+</body>
+</html>
